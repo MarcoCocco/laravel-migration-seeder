@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($trains as $treno)
+            @foreach ($partenzaTreni as $treno)
                 <tr>
                     <td>{{ $treno->azienda }}</td>
                     <td>{{ $treno->stazione_partenza }}</td>
