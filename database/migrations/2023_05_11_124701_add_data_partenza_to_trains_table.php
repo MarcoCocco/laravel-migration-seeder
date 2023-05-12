@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->date('data_partenza')->nullable()->after('orario_arrivo');
+            $table->dropColumn('data_partenza');
         });
     }
 };

@@ -23,12 +23,12 @@
                     <td>{{ $treno->stazione_partenza }}</td>
                     <td>{{ $treno->stazione_arrivo }}</td>
                     <td>{{ $treno->orario_partenza}}</td>
-                    <td>{{ $treno->orario_arrivo }} </td>
-                    <td>{{ $treno->data_partenza }} </td>
-                    <td>{{ $treno->codice_treno }} </td>
-                    <td>{{ $treno->numero_carrozze }} </td>
-                    <td>{{ $treno->in_orario ? 'Sì' : 'No'}} </td>
-                    <td>{{ $treno->cancellato ? 'Sì' : 'No' }} </td>
+                    <td>{{ $treno->orario_arrivo }}</td>
+                    <td>{{ $treno->data_partenza }}</td>
+                    <td>{{ $treno->codice_treno }}</td>
+                    <td>{{ $treno->numero_carrozze }}</td>
+                    <td>{{ $treno->in_orario ? 'Sì' : 'No' }}</td>
+                    <td>{{ $treno->cancellato ? 'Sì' : 'No' }}</td>
                 </tr>
             @endforeach
         </tbody>
