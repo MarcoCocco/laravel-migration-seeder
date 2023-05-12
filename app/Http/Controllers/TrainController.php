@@ -10,8 +10,9 @@ class TrainController extends Controller
 {
     public function home() {
 
-        $PartenzaTreni = Train::where('data_partenza', '>=', '2023-05-11')->get();
+        //$PartenzaTreni = Train::where('data_partenza', '>=', '2023-05-11')->get();
+        $trains = Train::all();
         
-        return view('home', compact('PartenzaTreni'));
+        return view('home', compact('trains'));
     }
 }
