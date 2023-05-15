@@ -23,7 +23,7 @@ class TrainsSeeder extends Seeder
         $trainsCSV = fgetcsv($trainsFile);
 
 
-        while ($trainsCSV != false) {
+        while ($trainsCSV = fgetcsv($trainsFile)) {
             $train = new Train();
 
             $train->company = $trainsCSV[0];
